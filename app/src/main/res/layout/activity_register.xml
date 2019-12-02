@@ -22,8 +22,8 @@
 
     <EditText
         android:id="@+id/register_userName"
-        android:layout_width="237dp"
-        android:layout_height="41dp"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:ems="10"
 
@@ -36,9 +36,9 @@
 
     <EditText
         android:id="@+id/register_yanzhengma"
-        android:layout_width="118dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="88dp"
+        android:layout_width="116dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="验证码"
@@ -50,20 +50,20 @@
         android:id="@+id/bt_register_yanzhengma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="88dp"
-        android:text="获取验证码"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
         android:enabled="true"
+        android:text="获取验证码"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_userName" />
 
     <EditText
         android:id="@+id/register_password"
-        android:layout_width="241dp"
-        android:layout_height="44dp"
+        android:layout_width="294dp"
+        android:layout_height="52dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="密码"
+        android:inputType="textPassword"
 
 
         app:layout_constraintBottom_toBottomOf="parent"

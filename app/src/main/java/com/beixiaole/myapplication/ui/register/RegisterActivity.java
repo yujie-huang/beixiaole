@@ -31,6 +31,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String username;
     private String userpassword;
     private SharedPreferences sp;
+    private TextView error;
 
 
     @Override
@@ -43,7 +44,8 @@ public class RegisterActivity extends AppCompatActivity {
         get_code = findViewById(R.id.bt_register_yanzhengma);
         register = findViewById(R.id.bt_register);
         code_time = findViewById(R.id.register_daojishi);
-        final TextView error = findViewById(R.id.register_error);
+        error = findViewById(R.id.register_error);
+        sp = getSharedPreferences("userInfo", 0);
 
 
         get_code.setOnClickListener(new View.OnClickListener() {
@@ -51,10 +53,11 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //两个&&，前面true才执行后面
                 if ((!userName.getText().toString().equals("")) && isMobileNO(userName.getText().toString())) {
+
                     service_code = new RegisterService().getCodeByPhone(userName.getText().toString());
 
                     get_code.setEnabled(false);
-                    error.setText("正在发送验证码，请稍后！");
+                    error.setText("已发送验证码！");
                     //点击一次，开始倒计时
 //                        Timer timer = new Timer();
 //                        timer.schedule(new TimerTask() {
@@ -79,15 +82,16 @@ public class RegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!(userName.getText().toString().equals("") && identifying_code.getText().toString().equals("") && password.getText().toString().equals(""))) {
 
+                if (!(userName.getText().toString().equals("") && identifying_code.getText().toString().equals("") && password.getText().toString().equals(""))) {
+//                    error.setText("注册失败，请检查验证码或手机号！");  ////这是一个测试
                     user_code = identifying_code.getText().toString();
                     username = userName.getText().toString();
                     userpassword = password.getText().toString();
                     SharedPreferences.Editor editor = sp.edit();  //编辑权限
-                    RegisterService res= new RegisterService();
+                    RegisterService res = new RegisterService();
                     if (res.registerCommit(username, userpassword) && service_code.equals(user_code)) {
-                        //跳转到资料更新添加页，并添加本地保存
+//                        跳转到资料更新添加页，并添加本地保存
                         editor.putString("USER_NAME", username);
                         editor.putString("PASSWORD", userpassword);
                         editor.putString("LOGIN_CONFIG", "true");
