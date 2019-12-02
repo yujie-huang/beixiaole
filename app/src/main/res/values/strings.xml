@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">babbay</string>
+    <string name="prompt_email">手机</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_button_navigation">ButtonNavigationActivity</string>
+    <string name="title_home">首页</string>
+    <string name="title_community">社交</string>
+    <string name="title_plan">计划</string>
+    <string name="title_person">个人</string>
+
+</resources>
