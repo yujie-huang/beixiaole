@@ -5,5 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.community.CommunityActivity">
+    <RadioGroup
+        android:id="@+id/rd_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/rd_menu_home"
+            style="@style/tab_menu_item"
+            android:drawableTop="@android:drawable/ic_menu_view"
+            android:text="@string/title_home"
+            />
+
+        <RadioButton
+            android:id="@+id/rd_menu_community"
+            style="@style/tab_menu_item"
+            android:drawableTop="@android:drawable/ic_menu_send"
+            android:text="@string/title_community"
+            android:background="@android:color/holo_blue_light"/>
+
+        <RadioButton
+            android:id="@+id/rd_menu_plan"
+            style="@style/tab_menu_item"
+            android:drawableTop="@android:drawable/ic_menu_my_calendar"
+            android:text="@string/title_plan" />
+        <RadioButton
+            android:id="@+id/rd_menu_person"
+            style="@style/tab_menu_item"
+            android:drawableTop="@android:drawable/ic_menu_myplaces"
+            android:text="@string/title_person" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

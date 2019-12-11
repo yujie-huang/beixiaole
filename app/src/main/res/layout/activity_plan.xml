@@ -2,11 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeActivity">
-
+    tools:context=".ui.plan.PlanActivity">
 
     <RadioGroup
         android:id="@+id/rd_group"
@@ -27,7 +25,7 @@
             style="@style/tab_menu_item"
             android:drawableTop="@android:drawable/ic_menu_view"
             android:text="@string/title_home"
-            android:background="@android:color/holo_blue_light"/>
+            />
 
         <RadioButton
             android:id="@+id/rd_menu_community"
@@ -39,34 +37,14 @@
             android:id="@+id/rd_menu_plan"
             style="@style/tab_menu_item"
             android:drawableTop="@android:drawable/ic_menu_my_calendar"
-            android:text="@string/title_plan" />
+            android:text="@string/title_plan"
+            android:background="@android:color/holo_blue_light"/>
         <RadioButton
             android:id="@+id/rd_menu_person"
             style="@style/tab_menu_item"
             android:drawableTop="@android:drawable/ic_menu_myplaces"
-            android:text="@string/title_person" />
+            android:text="@string/title_person"
+            />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView_home"
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:gravity="center"
-
-        android:text="@string/title_home"
-
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#00FFFFFF"
-        android:text=""
-        app:layout_constraintTop_toBottomOf="@+id/textView_home"
-        tools:layout_editor_absoluteX="177dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
