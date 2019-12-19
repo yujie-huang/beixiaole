@@ -3,6 +3,7 @@ package com.beixiaole.myapplication.ui.plan;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,7 @@ public class PlanActivity extends AppCompatActivity {
     private Button comm;
     private Button paln;
     private Button person;
+    private SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

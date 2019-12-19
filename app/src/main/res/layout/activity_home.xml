@@ -8,6 +8,53 @@
     tools:context=".ui.home.HomeActivity">
 
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="375dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="404dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="375dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="116dp"
+        android:text="如何观察新生儿体温是否正常\n新生宝宝的体温中枢功能发育还不是很完善，体温容易受到外界环境的温度影响。那么......"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="375dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="216dp"
+        android:text="新生儿正常的身体指标\n刚出生的宝宝像小天使一样，被爸爸妈妈小心翼翼的守护着。只要宝宝有一点不对，爸爸妈妈......"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="375dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="312dp"
+        android:text="婴儿有哪些气质类型\n每个宝宝都是一个独特的个体，哭的时间和频率、喜欢被抱着的时间都各不相同......"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
     <RadioGroup
         android:id="@+id/rd_group"
         android:layout_width="match_parent"
@@ -64,9 +111,77 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#00FFFFFF"
+        android:background="#a2a2a2"
         android:text=""
         app:layout_constraintTop_toBottomOf="@+id/textView_home"
         tools:layout_editor_absoluteX="177dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:text="推荐"
+        android:background="#d4c2d5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_home" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:text="教育"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView_home" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="20dp"
+        android:text="健康"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView_home" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="成长"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView_home" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="376dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="72dp"
+        android:text="一岁宝宝禁食的食谱黑名单\n爸妈们都乐于为宝宝们购买或自制各种各样营养美味的辅食，以期望宝宝们健康长大但宝宝......"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="376dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:text="让宝宝洗澡更轻松\n夏天酷热难耐，小宝宝如果受热就很容易出痱子，所以妈妈们一定要做好散热和....."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
